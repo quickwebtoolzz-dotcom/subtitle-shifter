@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Subtitle Sync Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subtitle Time Shifter</h1>
+        <p>Upload your .srt file, enter the seconds to shift, and download the fixed file instantly.</p>
+        
+        <label>1. Upload .srt File</label>
+        <input type="file" id="fileInput" accept=".srt">
+        
+        <label>2. Shift Time (Seconds)</label>
+        <input type="number" id="timeInput" placeholder="e.g. 2.5 or -1.5" step="0.1">
+        
+        <button onclick="processSubtitle()">Sync & Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
